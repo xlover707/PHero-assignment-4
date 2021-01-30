@@ -57,17 +57,22 @@
                     <input class="inp-style" type="date" name="">
                 </div>
             </div>
+
+            <!-- First Class Ticket Booking Section -->
+
             <div class="input-group f-class">
                 <div>
                     <label for="150">First Class <span id="firstClassAmount">($150)</span></label>
                     <input id="firstClassQuantity" class="inp-style inp-width" type="text" value="0">
                 </div>
+
                 <div>
                     <p class="plus-minus-btn" onclick="firstClassTicketBooking(true)">+</p>
                     <p class="plus-minus-btn" onclick="firstClassTicketBooking(false)">-</p>
                 </div>
             </div>
 
+            <!-- Economy Ticket Booking Button Section -->
             <div class="input-group f-class">
                 <div>
                     <label for="">Economy <span id="economyAmount">($100)</span></label>
@@ -78,6 +83,8 @@
                     <p class="plus-minus-btn" onclick="economyTicketBooking(false)">-</p>
                 </div>
             </div>
+
+            <!-- Subtotal Section-->
             <div class="calculations">
                 <div class="amount">
                     <div class="left">
@@ -88,6 +95,7 @@
                     </div>
                 </div>
 
+                <!-- VAT Section-->
                 <div class="amount">
                     <div class="left">
                         <p>Charge 10% VAT</p>
@@ -97,6 +105,8 @@
                     </div>
                 </div>
                 <hr>
+
+                <!-- Grand Total Section-->
                 <div class="amount">
                     <div class="left">
                         <h4>Total</h4>
@@ -110,6 +120,7 @@
         </div>
     </main>
 
+    <!-- JS Coding Start -->
 
     <script>
         //  First Class Ticket Counting
@@ -174,7 +185,7 @@
 
             const grandTotal = totalTicketPrice + tax;
             document.getElementById('grandTotal').innerText = '$' + grandTotal;
-        }    
+        }
     </script>
 </body>
 
